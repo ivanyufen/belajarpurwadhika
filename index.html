@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Introduction to HTML</title>
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <style>
+        table, th, td{
+            border: 2px solid blue;
+            border-collapse: collapse;
+        }
+
+        th{
+            font-style: italic; /* italic tulisan */
+            font-weight: bold; /* bold tulisan*/
+        }
+        
+        th span{
+            background-color: yellow;
+        }
+        
+
+        img{
+            width: 50px;
+            height: 50px;
+        }
+
+        td:nth-child(2){
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <th><span>Rank</span></th>
+            <th><span>Club</span></th>
+            <th><span>Logo</span></th>
+            <th><span>Function</span></th>
+            <th><span>Level</span></th>
+            <th><span>OK</span></th>
+        </tr>
+        <tr>
+            <td>1<sup>st</sup></td>
+            <td>Barcelona <sub>FC</sub></td>
+            <td><img src="img/barca.png" alt="barca"</td>
+            <td>2x<sup>3</sup> + 3x<sup>2</sup> - x - 13 = 0</td>
+            <td>
+                <input type="radio" name="level" value="junior">Junior
+                <input type="radio" name="level" value="profesional" checked>Profesional
+            </td>
+            <td>
+                <input type="button" value="Edit">
+            </td>
+        </tr>
+        <tr>
+                <td>2<sup>nd</sup></td>
+                <td>Bayern <sub>Munich</sub></td>
+                <td><img src="img/munchen.png" alt="munchen"</td>
+                <td>3y<sup>3</sup> - 5y<sup>2</sup> - 2y + 3 = 0</td>
+                <td>
+                    <input type="radio" name="level2" value="junior" checked>Junior
+                    <input type="radio" name="level2" value="profesional">Profesional
+                </td>
+                <td>
+                    <input type="button" value="Edit">
+                </td>
+            </tr>
+            <tr>
+                    <td>3<sup>rd</sup></td>
+                    <td>Real <sub>Madrid</sub></td>
+                    <td><img src="img/madrid.png" alt="madrid"</td>
+                    <td>2z<sup>3</sup> + z<sup>2</sup> - 2z + 5 = 0</td>
+                    <td>
+                        <input type="radio" name="level3" value="junior" checked>Junior
+                        <input type="radio" name="level3" value="profesional">Profesional
+                    </td>
+                    <td>
+                        <input type="button" value="Edit">
+                    </td>
+                </tr>
+                
+    </table>
+
+</body>
+</html>
